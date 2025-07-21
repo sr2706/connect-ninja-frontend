@@ -1,0 +1,62 @@
+.navbar {
+    padding: 0.5rem 0;
+    background-color: #FBFCEE !important;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.brand-text {
+    font-size: 2rem;
+    font-weight: 900;
+    background: linear-gradient(90deg, #0077b5 0%, #00c6fb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2.5px;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.brand-text::before {
+    content: "⚔";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b6f7b0;
+    font-size: 2rem;
+    filter: drop-shadow(0 0 6px #ff4d4d);
+}
+
+.nav-link {
+    color: black !important;
+    font-weight: 550;
+    font-size: 1.15rem;
+    margin: 0 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Neuton';
+    position: relative;
+}
+
+.nav-link:hover {
+    color: black !important;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        padding: 1.5rem;
+        background: var(--ninja-darker);
+        border-radius: var(--radius-md);
+        margin-top: 1rem;
+        box-shadow: var(--shadow-md);
+    }
+    .nav-link {
+        margin: 0.8rem 0;
+    }
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
